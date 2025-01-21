@@ -1,0 +1,70 @@
+.hero {
+    background-image: url("sass/assets/maldives_main.jpg");
+
+}
+
+
+.text-sur-image {
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-height: 50vmin;
+    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #fff;
+}
+
+.text-sur-image:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+.text-sur-image__img {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+}
+
+.text-sur-image__conteneur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.text-sur-image__text {
+    color: white;
+    text-align: left;
+}
+
+.text-sur-image__texte_centre {
+    color: white;
+    text-align: center;
+}
+
+.text-sur-image__text_centre {
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+logo {
+    //??????
+}
