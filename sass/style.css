@@ -18,7 +18,9 @@ Use it to make something cool, have fun, and sharing travel experiences.
 /*les variables*/
 /*les bases*/
 html {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {
@@ -26,7 +28,20 @@ body {
 }
 
 h1 {
-  font-size: clamp(1rem, 2.5vw, 5rem);
+  font-size: clamp(1rem, 2.5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1rem, 2.5vw, 1.9rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+button {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  font-family: "Raleway", serif;
 }
 
 a {
@@ -38,22 +53,18 @@ a:hover {
 }
 
 /*les composant*/
-.hero {
-  background-image: url("sass/assets/maldives_main.jpg");
-}
-
-.text-sur-image {
+.TexteSurImage {
   display: flex;
   position: relative;
   align-items: center;
-  min-height: 50vmin;
+  justify-content: left;
+  min-height: 80vmin;
   overflow: hidden;
   padding-left: 40px;
   padding-right: 40px;
-  color: #fff;
 }
 
-.text-sur-image:before {
+.TexteSurImage:before {
   content: " ";
   position: absolute;
   top: 0;
@@ -65,7 +76,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.text-sur-image__img {
+.TexteSurImage__image {
   position: absolute;
   z-index: -2;
   top: 0;
@@ -79,25 +90,27 @@ a:hover {
   width: 100%;
 }
 
-.text-sur-image__conteneur {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 30px;
-}
-
-.text-sur-image__text {
+.TexteSurImage__texte {
+  flex-basis: 30ch;
   color: white;
+  font-size: 42px;
   text-align: left;
 }
 
-.text-sur-image__texte_centre {
-  color: white;
+.TexteSurImage__bouton {
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: aqua;
+  color: black;
   text-align: center;
+  border: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
 }
 
-.text-sur-image__text_centre {
-  text-align: center;
-  color: white;
-  justify-content: center;
+.TexteSurImage__bouton:hover {
+  background-color: white;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

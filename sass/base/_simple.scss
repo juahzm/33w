@@ -1,11 +1,29 @@
 html {
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
 
 body {
     font-size: 16px;
 }
 
 h1 {
-    font-size: clamp(1rem, 2.5vw, 5rem);
+    font-size: clamp(1rem, 2.5vw, 3rem);
+
 }
+
+h2 {
+    font-size: clamp(1rem, 2.5vw, 1.9rem);
+}
+
+p {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+button {
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    font-family: "Raleway", serif;
+    
+} 

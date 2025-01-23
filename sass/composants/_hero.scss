@@ -1,70 +1,66 @@
-.hero {
-    background-image: url("sass/assets/maldives_main.jpg");
+// .hero {
+//     background-image: url("sass/assets/maldives_main.jpg");
 
+// }
+
+.TexteSurImage {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: left;
+	min-height: 80vmin;
+	overflow: hidden;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
-
-.text-sur-image {
-    display: flex;
-    position: relative;
-    align-items: center;
-    min-height: 50vmin;
-    overflow: hidden;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: #fff;
+.TexteSurImage:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	z-index: -1;
+	background-color: rgba(0,0,0,.5);
 }
 
-.text-sur-image:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, .5);
-
+.TexteSurImage__image {
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	object-fit: cover;
+	display: block;
+	height: 100%;
+	width: 100%;
 }
 
-.text-sur-image__img {
-    position: absolute;
-    z-index: -2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    object-fit: cover;
-    display: block;
-    height: 100%;
-    width: 100%;
-
+.TexteSurImage__texte {
+    flex-basis: 30ch;
+	color: white;
+	font-size: 42px;
+	text-align: left;
 }
 
-.text-sur-image__conteneur {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
-}
+.TexteSurImage__bouton {
 
-.text-sur-image__text {
-    color: white;
-    text-align: left;
-}
-
-.text-sur-image__texte_centre {
-    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: aqua;
+    color: black;
     text-align: center;
+    border: 0;
+    width: fit-content;
+    text-decoration: none;
+    
 }
 
-.text-sur-image__text_centre {
-    text-align: center;
-    color: white;
-    justify-content: center;
-}
-
-logo {
-    //??????
-}
+.TexteSurImage__bouton:hover{
+    background-color: white;
+    color: black;
+} 
