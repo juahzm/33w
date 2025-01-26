@@ -44,6 +44,10 @@ button {
   font-family: "Raleway", serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: darkblue;
@@ -113,4 +117,19 @@ a:hover {
 .TexteSurImage__bouton:hover {
   background-color: white;
   color: black;
+}
+
+.Grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+}
+.Grille .Grille__carte {
+  background-color: white;
+}
+
+.Grille__carte {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

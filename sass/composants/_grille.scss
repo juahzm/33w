@@ -1,0 +1,16 @@
+
+.Grille {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+& .Grille__carte {
+    background-color: white;
+}
+
+}
+
+.Grille__carte {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
