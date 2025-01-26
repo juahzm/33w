@@ -42,18 +42,42 @@ p {
 button {
   font-size: clamp(1rem, 1.5vw, 1.1rem);
   font-family: "Raleway", serif;
+  color: white;
 }
 
 img {
   max-width: 100%;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.titres {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.titres {
+  margin-top: 100px;
+}
+
 a {
   text-decoration: none;
-  color: darkblue;
+  color: #003249;
 }
 a:hover {
-  color: aqua;
+  color: white;
 }
 
 /*les composant*/
@@ -105,8 +129,8 @@ a:hover {
   padding: 10px;
   display: inline-block;
   border-radius: 5px;
-  background-color: aqua;
-  color: black;
+  background-color: #1d90ff;
+  color: white;
   text-align: center;
   border: 0;
   width: -moz-fit-content;
@@ -115,8 +139,8 @@ a:hover {
 }
 
 .TexteSurImage__bouton:hover {
-  background-color: white;
-  color: black;
+  background-color: gray;
+  color: white;
 }
 
 .Grille {
@@ -125,11 +149,68 @@ a:hover {
 }
 .Grille .Grille__carte {
   background-color: white;
+  color: #003249;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 100px;
 }
 
-.Grille__carte {
+.Grille__carte-titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  pointer-events: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-family: "Raleway", serif;
+  font-size: 1.5em;
+}
+
+.navigation_principal > ul {
+  display: flex;
+  gap: 10px;
+  color: #003249;
+  gap: 30px;
+}
+
+.navigation_principal {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+.navigation_principal > div {
+  display: flex;
+  flex-basis: 7.5ch;
+  flex-shrink: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.navigation_principal img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60px;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=style.css.map */

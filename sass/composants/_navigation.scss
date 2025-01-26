@@ -1,0 +1,52 @@
+ul {
+    display: flex;
+   flex-direction: row;
+  
+   pointer-events: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+li {
+
+    font-family: "Raleway", serif;
+    font-size: 1.5em;
+    
+}
+
+
+.navigation_principal>ul {
+    display: flex;
+    gap: 10px;
+    color: #003249;
+    gap: 30px;
+}
+
+.navigation_principal {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: space-between;
+
+}
+
+.navigation_principal>div {
+    display: flex;
+    flex-basis: 7.5ch;
+    flex-shrink: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.navigation_principal img {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 60px;
+    height: fit-content;
+
+}
