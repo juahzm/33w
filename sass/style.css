@@ -213,4 +213,9 @@ li {
   width: 60px;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.logo {
+  min-width: 80px;
+  min-height: 80px;
 }/*# sourceMappingURL=style.css.map */
