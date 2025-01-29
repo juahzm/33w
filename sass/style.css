@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(1rem, 2.5vw, 3rem);
+  font-size: 2em;
 }
 
 h2 {
@@ -236,7 +236,7 @@ li {
 @media (max-width: 840px) {
   .navigationPrincipal {
     margin: 0;
-    position: fixed;
+    position: relative;
     inset: 0;
   }
   .navigationPrincipal__conteneurUL {
@@ -251,24 +251,39 @@ li {
     pointer-events: all;
     display: block;
   }
+  .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) {
+    pointer-events: none;
+    background-color: transparent;
+  }
+  .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) a {
+    opacity: 0;
+  }
+  .navigationPrincipal__input.pour-ouvrir-fermer:before {
+    display: block;
+    min-width: 8ch;
+    content: "Ouvrir ≡";
+  }
+  .navigationPrincipal__input.pour-ouvrir-fermer:checked:before {
+    content: "Fermer ≡";
+  }
+  .navigationPrincipal__image {
+    display: none;
+  }
+  .Recherche__input {
+    display: none;
+  }
 }
-.navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) {
-  pointer-events: none;
-  background-color: transparent;
+@media (min-width: 840px) {
+  .navigationPrincipal__input.pour-ouvrir-fermer {
+    display: none;
+  }
 }
-
-.navigationPrincipal::has(input.pour-ouvrir-fermer:not(:checked)) a {
-  opacity: 0;
-}
-
-.navigationPrincipal__input.pour-ouvrir-fermer:before {
-  display: block;
-  min-width: 8ch;
-  content: "Ouvrir ≡";
-}
-
-.navigationPrincipal__input.pour-ouvrir-fermer:checked:before {
-  content: "Fermer ≡";
+.boutonNavigation {
+  position: relative;
+  top: 100px;
+  left: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 footer {

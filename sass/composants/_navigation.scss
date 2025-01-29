@@ -1,18 +1,18 @@
 ul {
     display: flex;
-   flex-direction: row;
-  
-   pointer-events: none;
+    flex-direction: row;
+    
+    pointer-events: none;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-   
+    
 }
 
 li {
-
+    
     font-family: "Raleway", serif;
     font-size: 1.5em;
     
@@ -31,7 +31,7 @@ li {
     flex-wrap: wrap;
     margin-bottom: 50px;
     justify-content: space-between;
-
+    
 }
 
 .navigationPrincipal__conteneurDIV {
@@ -45,10 +45,10 @@ li {
 .navigationPrincipal__image {
     display: flex;
     flex-wrap: wrap;
-
+    
     width: 60px;
     height: fit-content;
-
+    
 }
 
 .logo {
@@ -59,43 +59,78 @@ li {
 /*Navigation mobile*/
 
 @media (max-width: 840px) {
+    
+    .navigationPrincipal {
+        margin: 0;
+        position: relative;
+        inset: 0;
+    }
+    
+    .navigationPrincipal__conteneurUL {
+        flex-direction: column;
+        
+    }
 
-.navigationPrincipal {
-    margin: 0;
-    position: fixed;
-    inset: 0;
+   
+    
+    .navigationPrincipal__input.pour-ouvrir-fermer {
+        margin-left: auto;
+        appearance: none;
+        cursor: pointer;
+        pointer-events: all;
+        display: block;
+    }
+    
+    
+    .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) {
+        pointer-events: none;
+        background-color: transparent;
+    }
+    
+    .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) a {
+        opacity: 0;
+    }
+    
+    .navigationPrincipal__input.pour-ouvrir-fermer:before {
+        display: block;
+        min-width: 8ch;
+        content: "Ouvrir ≡";
+    }
+    
+    .navigationPrincipal__input.pour-ouvrir-fermer:checked:before {
+        content: "Fermer ≡";
+    }
+
+    .navigationPrincipal__image {
+display: none;
+    }
+
+    .Recherche__input {
+     display: none;   
+    }
+    
+    
+    
 }
 
-.navigationPrincipal__conteneurUL {
-    flex-direction: column;
+@media (min-width: 840px) {
+    .navigationPrincipal__input.pour-ouvrir-fermer {
+        display: none;
+    }
+    
+    
 }
 
-.navigationPrincipal__input.pour-ouvrir-fermer {
-    margin-left: auto;
-		appearance: none;
-		cursor: pointer;
-		pointer-events: all;
-		display: block;
-	}
+.boutonNavigation {
+    position: relative;
+    top: 100px;
+    left: 5px;
+    width: fit-content;
+    
 }
 
-.navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) {
-    pointer-events: none;
-    background-color: transparent;
-}
 
-.navigationPrincipal::has(input.pour-ouvrir-fermer:not(:checked)) a {
-    opacity: 0;
-}
 
-.navigationPrincipal__input.pour-ouvrir-fermer:before {
-    display: block;
-    min-width: 8ch;
-    content: "Ouvrir ≡";
-}
 
-.navigationPrincipal__input.pour-ouvrir-fermer:checked:before {
-content: "Fermer ≡";
-}
 
 
