@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: JHPeriple
 Theme URI: https://wordpress.org/themes/JHPeriple/
@@ -29,7 +30,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(1rem, 2.5vw, 3rem);
+  font-size: 2em;
 }
 
 h2 {
@@ -186,29 +187,37 @@ ul {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
 }
 
 li {
   font-family: "Raleway", serif;
   font-size: 1.5em;
+  padding: 30px;
 }
 
-.navigation_principal > ul {
+.navigationPrincipal_recherche-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigationPrincipal__conteneurUL {
   display: flex;
   gap: 10px;
   color: #003249;
   gap: 30px;
 }
 
-.navigation_principal {
+.navigationPrincipal {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
   justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.navigation_principal > div {
+.navigationPrincipal__conteneurDIV {
   display: flex;
   flex-basis: 7.5ch;
   flex-shrink: 0;
@@ -218,7 +227,7 @@ li {
   width: fit-content;
 }
 
-.navigation_principal img {
+.navigationPrincipal__image {
   display: flex;
   flex-wrap: wrap;
   width: 60px;
@@ -227,8 +236,75 @@ li {
 }
 
 .logo {
-  min-width: 80px;
-  min-height: 80px;
+  min-width: 130px;
+  min-height: 130px;
+}
+
+.navigationPrincipal_recherche {
+  display: flex;
+}
+
+.navigationPrincipal_recherche-input {
+  font-family: "Raleway", serif;
+  font-size: 22px;
+}
+
+/*Navigation mobile*/
+@media (max-width: 840px) {
+  .navigationPrincipal {
+    margin: 0;
+    position: relative;
+    inset: 0;
+  }
+  .navigationPrincipal__conteneurUL {
+    flex-direction: column;
+  }
+  .navigationPrincipal__input.pour-ouvrir-fermer {
+    margin-left: auto;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    cursor: pointer;
+    pointer-events: all;
+    display: block;
+  }
+  .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) {
+    pointer-events: none;
+    background-color: transparent;
+  }
+  .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) a {
+    opacity: 0;
+  }
+  .navigationPrincipal__input.pour-ouvrir-fermer:before {
+    display: block;
+    min-width: 8ch;
+    content: "Ouvrir ≡";
+  }
+  .navigationPrincipal__input.pour-ouvrir-fermer:checked:before {
+    content: "Fermer ≡";
+  }
+  .navigationPrincipal_recherche-input {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+}
+@media (min-width: 840px) {
+  .navigationPrincipal__input.pour-ouvrir-fermer {
+    display: none;
+  }
+}
+.boutonNavigation {
+  position: relative;
+  top: 80px;
+  left: 120px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 17px;
 }
 
 footer {

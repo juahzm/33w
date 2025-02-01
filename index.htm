@@ -10,18 +10,28 @@
     <title>Accueil</title>
 </head>
 <body>
-
-    <nav class="navigation_principal">
-
-        <div>
-            <img class="logo" src="sass/assets/svg/logo.svg" alt="logo">
+    
+    <nav class="navigationPrincipal">
+        <input class="navigationPrincipal__input pour-ouvrir-fermer boutonNavigation" type="checkbox">
+        
+        <div class="navigationPrincipal__conteneurDIV">
+            <img class="logo navigationPrincipal__image" src="sass/assets/svg/logo.svg" alt="logo">
         </div>
-        <ul>
+        <ul class="navigationPrincipal__conteneurUL">
             <li><a href="">Séjours</a></li>
             <li><a href="">Dernière Minute</a></li>
             <li><a href="">Promo</a></li>
             <li><a href="">Achetez vos billets</a></li>
+            
         </ul>
+        
+        <form class="navigationPrincipal_recherche">
+            <div class="navigationPrincipal_recherche-div">
+                
+                <input type="text" placeholder="Recherche" class="navigationPrincipal_recherche-input">
+                
+            </div>
+        </form>
     </nav>
     
     
@@ -39,7 +49,7 @@
     
     
     <main>
-
+        
         <div class="titres">
             <h1>Destinations</h1>
         </div>
@@ -59,7 +69,7 @@
                 </button>
                 
             </article>
-
+            
             <article class="Grille__carte">
                 <div class="Grille__carte-titre">
                     <h2>Patagonia</h2>
@@ -73,7 +83,7 @@
                 </button>
                 
             </article>
-
+            
             <article class="Grille__carte">
                 <div class="Grille__carte-titre">
                     <h2>Canyon du Colorado</h2>
@@ -87,7 +97,7 @@
                 </button>
                 
             </article>
-
+            
             <article class="Grille__carte">
                 <div class="Grille__carte-titre">
                     <h2>La thailande</h2>
@@ -101,7 +111,7 @@
                 </button>
                 
             </article>
-
+            
             <article class="Grille__carte">
                 <div class="Grille__carte-titre">
                     <h2>Machu Pichu</h2>
@@ -115,7 +125,7 @@
                 </button>
                 
             </article>
-
+            
             <article class="Grille__carte">
                 <div class="Grille__carte-titre">
                     <h2>L'égypte</h2>
@@ -129,7 +139,7 @@
                 </button>
                 
             </article>
-
+            
             <article class="Grille__carte">
                 <div class="Grille__carte-titre">
                     <h2>L'Australie</h2>
@@ -143,7 +153,7 @@
                 </button>
                 
             </article>
-
+            
             <article class="Grille__carte">
                 <div class="Grille__carte-titre">
                     <h2>Paris</h2>
@@ -157,7 +167,7 @@
                 </button>
                 
             </article>
-
+            
             <article class="Grille__carte">
                 <div class="Grille__carte-titre">
                     <h2>Bogota</h2>
@@ -173,12 +183,12 @@
             </article>
             
         </section>
-
+        
         <footer>
             <p>Tous droits réservés</p>
         </footer>
         
-    
+        
     </main>
     
 </body>
