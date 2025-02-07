@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="sass/style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Accueil</title>
+    <?php wp_head(); ?>
+</head>
+
+<body>
+
+
+    <nav class="navigationPrincipal">
+        <input class="navigationPrincipal__input pour-ouvrir-fermer boutonNavigation" type="checkbox">
+
+        <div class="navigationPrincipal__conteneurDIV">
+            <img class="logo navigationPrincipal__image" src="<?php echo get_template_directory_uri() . '/sass/assets/svg/logo.svg' ?>" alt="logo">
+        </div>
+        <ul class="navigationPrincipal__conteneurUL">
+            <li><a href="">Séjours</a></li>
+            <li><a href="">Dernière Minute</a></li>
+            <li><a href="">Promo</a></li>
+            <li><a href="">Achetez vos billets</a></li>
+
+        </ul>
+
+        <form class="navigationPrincipal_recherche">
+            <div class="navigationPrincipal_recherche-div">
+
+                <input type="text" placeholder="Recherche" class="navigationPrincipal_recherche-input">
+
+            </div>
+        </form>
+    </nav>
+
+
+    <header class="TexteSurImage">
+        <img class="TexteSurImage__image" src="<?php echo get_template_directory_uri() . '/sass/assets/maldives_main.jpg' ?>" alt="maldives">
+
+
+        <div class="TexteSurImage__texte">
+            <h3>Évasion Horizon</h3>
+            <h4>"Évadez-vous, on s’occupe du reste."</h4>
+            <p>Notre agence vous accompagne dans la création de voyages sur mesure, pour que chaque destination devienne une expérience unique, mémorable et adaptée à vos envies.</p>
+            <button class="TexteSurImage__bouton">
+                <a>S'inscrire</a>
+                </a>
+        </div>
+    </header>
