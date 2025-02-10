@@ -16,7 +16,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and sharing travel experiences.
 */
 
-
+@use 'sass:color';
 /*les variables*/
 @import "variables/couleur";
 /*les bases*/
@@ -27,4 +27,4 @@ Use it to make something cool, have fun, and sharing travel experiences.
 @import "composants/hero";
 @import "composants/grille";
 @import "composants/navigation";
-@import  "composants/pieDePage";
+@import "composants/pieDePage";

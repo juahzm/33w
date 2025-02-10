@@ -28,14 +28,24 @@
             <li><a href="">Achetez vos billets</a></li>
 
         </ul>
+        <div>
+            <form class="navigationPrincipal_recherche" action="index.html" method="get">
+                <div class="navigationPrincipal_recherche-div">
+                    <label hidden for="recherche" id="recherche-label">recherche</label>
+                    <input
+                        type="text"
+                        name="recherche"
+                        id="recherche"
+                        placeholder="Recherche VogageUnique.com"
+                        class="navigationPrincipal_recherche-input"
+                        required
+                        aria-labelledby="recherche-label" />
+                    <img class="png" src="<?php echo get_template_directory_uri() . '/sass/assets/lupe2.png' ?>" alt="icon">
 
-        <form class="navigationPrincipal_recherche">
-            <div class="navigationPrincipal_recherche-div">
+                </div>
+            </form>
+        </div>
 
-                <input type="text" placeholder="Recherche" class="navigationPrincipal_recherche-input">
-
-            </div>
-        </form>
     </nav>
 
 
