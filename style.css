@@ -21,7 +21,7 @@ Use it to make something cool, have fun, and sharing travel experiences.
 html {
   font-family: "Raleway", serif;
   font-optical-sizing: auto;
-  font-style: normal;
+  font-style: small;
   color: #003249;
 }
 
@@ -30,35 +30,40 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 h2 {
   font-family: "Raleway", serif;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #003249;
 }
 
 h3 {
-  font-size: 0.9em;
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: 0.6em;
+  font-size: 1.3em;
 }
 
 p {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: 1em;
 }
 
 button {
-  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  font-size: 1em;
   font-family: "Raleway", serif;
   color: white;
 }
 
 img {
   max-width: 100%;
+}
+
+.png {
+  width: 5px;
+  height: 5px;
 }
 
 .flex-column {
@@ -123,8 +128,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   height: 100%;
   width: 100%;
@@ -145,7 +149,6 @@ a:hover {
   color: white;
   text-align: center;
   border: 0;
-  width: -moz-fit-content;
   width: fit-content;
   text-decoration: none;
 }
@@ -221,9 +224,7 @@ li {
   display: flex;
   flex-basis: 7.5ch;
   flex-shrink: 0;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -231,13 +232,23 @@ li {
   display: flex;
   flex-wrap: wrap;
   width: 60px;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
 .logo {
-  min-width: 30px;
-  min-height: 30px;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.recherche {
+  width: 450px;
+  height: fit-content;
+  font-size: 14px;
+}
+
+input {
+  border: 1.7px solid var(--couleurBleuDogger);
+  font-size: 15px;
 }
 
 .navigationPrincipal_recherche {
@@ -261,9 +272,7 @@ li {
   }
   .navigationPrincipal__input.pour-ouvrir-fermer {
     margin-left: auto;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     cursor: pointer;
     pointer-events: all;
     display: block;
@@ -299,7 +308,6 @@ li {
   position: relative;
   top: 80px;
   left: 120px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid black;
   padding: 10px;
@@ -312,4 +320,20 @@ footer {
   text-align: center;
   padding: 10px;
   color: #003249;
+}
+
+.PieDePage-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  border: solid 2px #003249;
+  background-color: var(--couleurBleuPrussian);
+  padding: 20px;
+}
+
+.PieDePage-menu ul {
+  list-style-type: none;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

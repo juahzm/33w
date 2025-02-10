@@ -12,7 +12,7 @@
         </article>
 
         <div class="navigationPrincipal__conteneurDIV">
-            <img class="logo navigationPrincipal__image" src="<?php echo get_template_directory_uri() . '/sass/assets/svg/logo.svg' ?>" alt="logo">
+            <img class="logo navigationPrincipal__image" src="<?php echo get_template_directory_uri() . '/sass/assets/svg/logo.svg'  ?>" alt="logo">
         </div>
 
         <article class="flex-column">
