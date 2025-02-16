@@ -1,5 +1,5 @@
 footer {
-    margin-top: 50px;
+
     text-align: center;
     padding: 10px;
     color: #003249;
@@ -10,12 +10,18 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 80px;
-    border: solid 2px #003249;
-    background-color: var(--couleurBleuPrussian);
+    justify-content: center;
+    align-items: center;
+
     padding: 20px;
 }
 
 .PieDePage-menu ul {
     list-style-type: none;
     padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #003249;
 }

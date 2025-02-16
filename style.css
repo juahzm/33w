@@ -19,41 +19,39 @@ Use it to make something cool, have fun, and sharing travel experiences.
 /*les bases*/
 html {
   font-family: "Raleway", serif;
-  font-optical-sizing: auto;
   font-style: normal;
-  color: #003249;
 }
 
 body {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 23px;
+  color: #003249;
 }
 
 h2 {
   font-family: "Raleway", serif;
-  font-size: 0.8em;
+  font-size: 21px;
   color: #003249;
 }
 
 h3 {
-  font-size: 0.7em;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 0.5em;
+  font-size: 17px;
 }
 
 p {
-  font-size: 0.5em;
+  font-size: 17px;
 }
 
 button {
-  font-size: 0.6em;
+  font-size: 17px;
   font-family: "Raleway", serif;
-  color: white;
 }
 
 img {
@@ -61,8 +59,8 @@ img {
 }
 
 .png {
-  width: 5px;
-  height: 5px;
+  width: 30px;
+  height: auto;
 }
 
 .flex-column {
@@ -86,16 +84,23 @@ img {
   text-align: center;
 }
 
-.titres {
-  margin-top: 100px;
+.logo {
+  width: 70px;
+  height: auto;
 }
 
-a {
-  text-decoration: none;
-  color: #003249;
+/**Rytme*/
+main {
+  margin-top: 40px;
 }
-a:hover {
-  color: lightgray;
+
+.titres {
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+footer {
+  margin-top: 200px;
 }
 
 /*les composant*/
@@ -119,7 +124,7 @@ a:hover {
   left: 0;
   display: block;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .TexteSurImage__image {
@@ -146,11 +151,12 @@ a:hover {
   padding: 10px;
   display: inline-block;
   border-radius: 5px;
-  background-color: #1d90ff;
-  color: white;
+  background-color: white;
+  color: #007ea7;
   text-align: center;
-  border: 0;
+  border: 1px solid #007ea7;
   width: fit-content;
+  height: fit-content;
   text-decoration: none;
 }
 
@@ -161,6 +167,7 @@ a:hover {
 
 .Grille {
   display: grid;
+  gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
 }
 .Grille .Grille__carte {
@@ -171,7 +178,10 @@ a:hover {
   flex-wrap: wrap;
   gap: 5px;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 30px;
+  border: 1px solid #003249;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .Grille__carte-titre {
@@ -193,10 +203,16 @@ nav ul {
   list-style-type: none;
 }
 
+nav a {
+  text-decoration: none;
+  color: #003249;
+}
+
 li {
   font-family: "Raleway", serif;
   font-size: 1em;
-  padding: 30px;
+  gap: 30px;
+  padding: 10px;
 }
 
 .navigationPrincipal_recherche-div {
@@ -209,6 +225,8 @@ li {
   gap: 10px;
   color: #003249;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigationPrincipal {
@@ -230,13 +248,13 @@ li {
   width: fit-content;
 }
 
-.logosvg {
-  width: 100px;
-  height: auto;
-}
-
 input {
   border: 1.7px solid black;
+}
+
+input::placeholder {
+  font-size: 18px;
+  text-align: center;
 }
 
 .navigationPrincipal_recherche {
@@ -248,9 +266,10 @@ input {
   font-size: 10px;
 }
 
-.png {
-  width: 25px;
-  height: 25px;
+.menu-populaire {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /*Navigation mobile*/
@@ -288,7 +307,8 @@ input {
   .navigationPrincipal_recherche-input {
     display: none;
   }
-  label {
+  label,
+  .lupe {
     display: none;
   }
 }
@@ -299,8 +319,8 @@ input {
 }
 .boutonNavigation {
   position: relative;
-  top: 80px;
-  left: 120px;
+  top: 0;
+  left: 0;
   width: fit-content;
   border: 1px solid black;
   padding: 10px;
@@ -309,7 +329,6 @@ input {
 }
 
 footer {
-  margin-top: 50px;
   text-align: center;
   padding: 10px;
   color: #003249;
@@ -320,12 +339,17 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 80px;
-  border: solid 2px #003249;
-  background-color: var(--couleurBleuPrussian);
+  justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
 .PieDePage-menu ul {
   list-style-type: none;
   padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #003249;
 }/*# sourceMappingURL=style.css.map */

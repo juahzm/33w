@@ -4,6 +4,7 @@ ul {
 
     pointer-events: none;
 
+
 }
 
 nav ul {
@@ -12,11 +13,20 @@ nav ul {
 
 }
 
+nav a {
+    text-decoration: none;
+    color: #003249;
+}
+
+
+
 li {
 
     font-family: "Raleway", serif;
     font-size: 1em;
-    padding: 30px;
+    gap: 30px;
+    padding: 10px;
+
 
 }
 
@@ -32,6 +42,8 @@ li {
     gap: 10px;
     color: #003249;
     gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigationPrincipal {
@@ -55,18 +67,15 @@ li {
 
 
 
-.logosvg {
-    width: 100px;
-    height: auto;
-}
-
-
-
-
-
 input {
     border: 1.7px solid black;
 
+
+}
+
+input::placeholder {
+    font-size: 18px;
+    text-align: center;
 }
 
 
@@ -82,10 +91,14 @@ input {
 
 }
 
-.png {
-    width: 25px;
-    height: 25px;
+
+.menu-populaire {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+
 
 
 /*Navigation mobile*/
@@ -140,9 +153,12 @@ input {
         display: none;
     }
 
-    label {
+    label,
+    .lupe {
         display: none;
     }
+
+
 
 
 
@@ -158,8 +174,8 @@ input {
 
 .boutonNavigation {
     position: relative;
-    top: 80px;
-    left: 120px;
+    top: 0;
+    left: 0;
     width: fit-content;
     border: 1px solid black;
     padding: 10px;
