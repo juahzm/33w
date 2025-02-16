@@ -65,7 +65,7 @@
 
     </div>
     <div>
-        <p>Juan Hernandez. Tous droits réservés...</p>
+        <p>Juan Hernandez. Tous droits réservés 2025</p>
     </div>
     <?php wp_footer(); ?>
 
