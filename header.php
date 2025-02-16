@@ -18,7 +18,7 @@
         <input class="navigationPrincipal__input pour-ouvrir-fermer boutonNavigation" type="checkbox">
 
         <div class="navigationPrincipal__conteneurDIV">
-            <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.png' ?>" alt="logo">
+            <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.jpg' ?>" alt="logo">
         </div>
 
         <div class="menu-populaire navigationPrincipal__conteneurUL">

@@ -30,7 +30,7 @@
         </article>
 
         <div class="navigationPrincipal__conteneurDIV">
-            <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.png'  ?>" alt="logo">
+            <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.jpg'  ?>" alt="logo">
         </div>
 
         <article class="flex-row">
