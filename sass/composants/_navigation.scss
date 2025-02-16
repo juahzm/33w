@@ -4,6 +4,7 @@ ul {
 
     pointer-events: none;
 
+
 }
 
 nav ul {
@@ -12,11 +13,17 @@ nav ul {
 
 }
 
+nav a {
+    text-decoration: none;
+    color: #003249;
+}
+
 li {
 
     font-family: "Raleway", serif;
     font-size: 1em;
     padding: 30px;
+
 
 }
 
@@ -74,6 +81,15 @@ input {
 }
 
 
+.menu-populaire {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
 /*Navigation mobile*/
 
 @media (max-width: 840px) {
@@ -126,9 +142,12 @@ input {
         display: none;
     }
 
-    label {
+    label,
+    .lupe {
         display: none;
     }
+
+
 
 
 
@@ -144,8 +163,8 @@ input {
 
 .boutonNavigation {
     position: relative;
-    top: 80px;
-    left: 120px;
+    top: 0;
+    left: 0;
     width: fit-content;
     border: 1px solid black;
     padding: 10px;

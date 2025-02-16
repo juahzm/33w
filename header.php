@@ -21,17 +21,21 @@
             <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.png' ?>" alt="logo">
         </div>
 
-        <?php wp_nav_menu(
-            array(
-                'menu' => 'principal',
-                'container' => 'nav',
-                'container_class' => '',
-                'container_id' => '',
-                'container_aria_label' => '',
-                'menu_class' => 'menu'
-            )
-        );
-        ?>
+        <div class="menu-populaire navigationPrincipal__conteneurUL">
+
+            <?php wp_nav_menu(
+                array(
+                    'menu' => 'principal',
+                    'container' => 'nav',
+                    'container_class' => '',
+                    'container_id' => '',
+                    'container_aria_label' => '',
+                    'menu_class' => 'menu'
+                )
+            );
+            ?>
+
+        </div>
 
 
         <ul class="navigationPrincipal__conteneurUL">
@@ -53,7 +57,7 @@
                         class="navigationPrincipal_recherche-input"
                         required
                         aria-labelledby="recherche-label" />
-                    <img class="png" src="<?php echo get_template_directory_uri() . '/sass/assets/lupe2.png' ?>" alt="icon">
+                    <img class="png lupe" src="<?php echo get_template_directory_uri() . '/sass/assets/lupe2.png' ?>" alt="icon">
 
                 </div>
             </form>

@@ -37,7 +37,7 @@
             </div>
 
             <picture>
-                <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/tokio.jpeg' ?>" alt="tokio">
+                <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/japan2.jpg' ?>" alt="tokio2">
             </picture>
             <button class="TexteSurImage__bouton">
                 <a>Plus d'info</a>
@@ -51,7 +51,7 @@
             </div>
 
             <picture>
-                <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/argentina.jpeg' ?>" alt="argentina">
+                <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/argentinapa.jpeg' ?>" alt="argentinapa">
 
             </picture>
             <button class="TexteSurImage__bouton">
