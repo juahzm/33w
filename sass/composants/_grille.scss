@@ -1,18 +1,19 @@
-
 .Grille {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
-& .Grille__carte {
-    background-color: white;
-    color: #003249;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5px;
-   justify-content: center;
-   margin-top: 100px;
-   
-}
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+
+    & .Grille__carte {
+        background-color: white;
+        color: #003249;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        margin-top: 100px;
+
+    }
 
 
 }
@@ -26,6 +27,6 @@ grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
     padding: 0;
     margin: 0;
     text-align: center;
-  
+
 
 }

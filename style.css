@@ -19,41 +19,39 @@ Use it to make something cool, have fun, and sharing travel experiences.
 /*les bases*/
 html {
   font-family: "Raleway", serif;
-  font-optical-sizing: auto;
   font-style: normal;
-  color: #003249;
 }
 
 body {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 23px;
+  color: #003249;
 }
 
 h2 {
   font-family: "Raleway", serif;
-  font-size: 0.8em;
+  font-size: 21px;
   color: #003249;
 }
 
 h3 {
-  font-size: 0.7em;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 0.5em;
+  font-size: 17px;
 }
 
 p {
-  font-size: 0.5em;
+  font-size: 17px;
 }
 
 button {
-  font-size: 0.6em;
+  font-size: 17px;
   font-family: "Raleway", serif;
-  color: white;
 }
 
 img {
@@ -61,8 +59,8 @@ img {
 }
 
 .png {
-  width: 5px;
-  height: 5px;
+  width: 30px;
+  height: auto;
 }
 
 .flex-column {
@@ -90,12 +88,9 @@ img {
   margin-top: 100px;
 }
 
-a {
-  text-decoration: none;
-  color: #003249;
-}
-a:hover {
-  color: lightgray;
+.logo {
+  width: 70px;
+  height: auto;
 }
 
 /*les composant*/
@@ -146,11 +141,12 @@ a:hover {
   padding: 10px;
   display: inline-block;
   border-radius: 5px;
-  background-color: #1d90ff;
-  color: white;
+  background-color: white;
+  color: #007ea7;
   text-align: center;
-  border: 0;
+  border: 1px solid #007ea7;
   width: fit-content;
+  height: fit-content;
   text-decoration: none;
 }
 
@@ -161,6 +157,7 @@ a:hover {
 
 .Grille {
   display: grid;
+  gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
 }
 .Grille .Grille__carte {
@@ -230,11 +227,6 @@ li {
   width: fit-content;
 }
 
-.logosvg {
-  width: 100px;
-  height: auto;
-}
-
 input {
   border: 1.7px solid black;
 }
@@ -246,11 +238,6 @@ input {
 .navigationPrincipal_recherche-input {
   font-family: "Raleway", serif;
   font-size: 10px;
-}
-
-.png {
-  width: 25px;
-  height: 25px;
 }
 
 /*Navigation mobile*/
@@ -320,8 +307,8 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 80px;
-  border: solid 2px #003249;
-  background-color: var(--couleurBleuPrussian);
+  justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 

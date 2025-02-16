@@ -23,7 +23,7 @@
 	left: 0;
 	display: block;
 	z-index: -1;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0, 0, 0, .5);
 }
 
 .TexteSurImage__image {
@@ -40,7 +40,7 @@
 }
 
 .TexteSurImage__texte {
-    flex-basis: 30ch;
+	flex-basis: 30ch;
 	color: white;
 	font-size: 42px;
 	text-align: left;
@@ -48,19 +48,20 @@
 
 .TexteSurImage__bouton {
 
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #1d90ff;
-    color: white;
-    text-align: center;
-    border: 0;
-    width: fit-content;
-    text-decoration: none;
-    
+	padding: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: white;
+	color: #007ea7;
+	text-align: center;
+	border: 1px solid #007ea7;
+	width: fit-content;
+	height: fit-content;
+	text-decoration: none;
+
 }
 
-.TexteSurImage__bouton:hover{
-    background-color: gray;
-    color: white;
-} 
+.TexteSurImage__bouton:hover {
+	background-color: gray;
+	color: white;
+}

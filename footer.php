@@ -1,9 +1,25 @@
 <footer>
 
     <div class="PieDePage-menu">
+
+
+
         <article class="flex-row titres">
             <div>
-                <h1>CONTACTEZ-NOUS</h1>
+                <h3>NOS OFFRES SPÉCIALES</h3>
+                <ul class="flex-column">
+                    <li><a href="">Offres de dernière minute</a></li>
+                    <li><a href="">Voyages tout inclus</a></li>
+                    <li><a href="">Séjours en famille</a></li>
+                    <li><a href="">Voyages de lune de miel</a></li>
+                </ul>
+            </div>
+        </article>
+
+
+        <article class="flex-row titres">
+            <div>
+                <h3>CONTACTEZ-NOUS</h3>
                 <ul class="flex-column">
                     <li><a href="">Quebec</a></li>
                     <li><a href="">Montreal</a></li>
@@ -14,12 +30,12 @@
         </article>
 
         <div class="navigationPrincipal__conteneurDIV">
-            <img class="logo navigationPrincipal__image" src="<?php echo get_template_directory_uri() . '/sass/assets/svg/logo.svg'  ?>" alt="logo">
+            <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.png'  ?>" alt="logo">
         </div>
 
         <article class="flex-row titres">
             <div>
-                <h1>NOS SERVICES</h1>
+                <h3>NOS SERVICES</h3>
                 <ul class="flex-column">
                     <li><a href="">Billets d'avions.</a></li>
                     <li><a href="">Location des voitures</a></li>
@@ -29,8 +45,28 @@
             </div>
         </article>
 
+        <article class="flex-row titres">
+            <div>
+                <h3>À PROPOS</h3>
+                <ul class="flex-column">
+                    <li><a href="">Présentation de l'entreprise</a></li>
+                    <li><a href="">Notre équipe</a></li>
+                    <li><a href="">Carrières</a></li>
+                    <li><a href="">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </article>
+
+
+
+
+
+
 
     </div>
-    <p>Tous droits réservés</p>
+    <div>
+        <p>Juan Hernandez. Tous droits réservés...</p>
+    </div>
     <?php wp_footer(); ?>
+
 </footer>

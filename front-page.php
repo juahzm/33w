@@ -2,8 +2,32 @@
 <main>
 
     <div class="titres">
+        <h1>Populaires</h1>
+    </div>
+
+
+    <section class="populaire">
+
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <?php if (in_category('galerie')) {
+                    the_content();
+                } else { ?>
+                    <article>
+                        <h2><?php the_title(); ?></h2>
+                        <div><?php echo wp_trim_words(get_the_excerpt(), 70, " ... "); ?></div>
+                    </article>
+                <?php } ?>
+        <?php endwhile;
+        endif; ?>
+
+
+    </section>
+
+    <div class="titres">
         <h1>Destinations</h1>
     </div>
+
+
 
     <section class="Grille">
 
@@ -143,17 +167,7 @@
 
     </section>
 
-    <section class="populaire">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <article>
-                    <h2><?php the_title(); ?></h2>
-                    <div><?php the_content(); ?></div>
-                </article>
-        <?php endwhile;
-        endif; ?>
 
-
-    </section>
 
 
 

@@ -18,7 +18,7 @@
         <input class="navigationPrincipal__input pour-ouvrir-fermer boutonNavigation" type="checkbox">
 
         <div class="navigationPrincipal__conteneurDIV">
-            <img class="logosvg" src="<?php echo get_template_directory_uri() . '/sass/assets/svg/logo.svg' ?>" alt="logo">
+            <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.png' ?>" alt="logo">
         </div>
 
         <?php wp_nav_menu(
@@ -32,9 +32,6 @@
             )
         );
         ?>
-
-
-
 
 
         <ul class="navigationPrincipal__conteneurUL">
@@ -52,7 +49,7 @@
                         type="text"
                         name="recherche"
                         id="recherche"
-                        placeholder="Recherche"
+                        placeholder="Travel.com"
                         class="navigationPrincipal_recherche-input"
                         required
                         aria-labelledby="recherche-label" />

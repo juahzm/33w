@@ -10,8 +10,9 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 80px;
-    border: solid 2px #003249;
-    background-color: var(--couleurBleuPrussian);
+    justify-content: center;
+    align-items: center;
+
     padding: 20px;
 }
 
