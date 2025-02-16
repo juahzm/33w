@@ -16,12 +16,11 @@ Text Domain: JHPeriple
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and sharing travel experiences.
 */
-/*les variables*/
 /*les bases*/
 html {
   font-family: "Raleway", serif;
   font-optical-sizing: auto;
-  font-style: small;
+  font-style: normal;
   color: #003249;
 }
 
@@ -35,24 +34,24 @@ h1 {
 
 h2 {
   font-family: "Raleway", serif;
-  font-size: 1.7em;
+  font-size: 0.8em;
   color: #003249;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 0.7em;
 }
 
 h4 {
-  font-size: 1.3em;
+  font-size: 0.5em;
 }
 
 p {
-  font-size: 1em;
+  font-size: 0.5em;
 }
 
 button {
-  font-size: 1em;
+  font-size: 0.6em;
   font-family: "Raleway", serif;
   color: white;
 }
@@ -69,11 +68,13 @@ img {
 .flex-column {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .titres {
@@ -94,7 +95,7 @@ a {
   color: #003249;
 }
 a:hover {
-  color: white;
+  color: lightgray;
 }
 
 /*les composant*/
@@ -194,7 +195,7 @@ nav ul {
 
 li {
   font-family: "Raleway", serif;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 30px;
 }
 
@@ -214,10 +215,11 @@ li {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  justify-content: space-between;
+  gap: 15px;
+  justify-content: center;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .navigationPrincipal__conteneurDIV {
@@ -228,27 +230,13 @@ li {
   width: fit-content;
 }
 
-.navigationPrincipal__image {
-  display: flex;
-  flex-wrap: wrap;
-  width: 60px;
-  height: fit-content;
-}
-
-.logo {
-  min-width: 50px;
-  min-height: 50px;
-}
-
-.recherche {
-  width: 450px;
-  height: fit-content;
-  font-size: 14px;
+.logosvg {
+  width: 100px;
+  height: auto;
 }
 
 input {
-  border: 1.7px solid var(--couleurBleuDogger);
-  font-size: 15px;
+  border: 1.7px solid black;
 }
 
 .navigationPrincipal_recherche {
@@ -257,7 +245,12 @@ input {
 
 .navigationPrincipal_recherche-input {
   font-family: "Raleway", serif;
-  font-size: 22px;
+  font-size: 10px;
+}
+
+.png {
+  width: 25px;
+  height: 25px;
 }
 
 /*Navigation mobile*/
@@ -327,7 +320,6 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 80px;
-  justify-content: center;
   border: solid 2px #003249;
   background-color: var(--couleurBleuPrussian);
   padding: 20px;
