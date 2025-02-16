@@ -99,6 +99,10 @@ main {
   margin-bottom: 50px;
 }
 
+footer {
+  margin-top: 200px;
+}
+
 /*les composant*/
 .TexteSurImage {
   display: flex;
@@ -325,7 +329,6 @@ input::placeholder {
 }
 
 footer {
-  margin-top: 50px;
   text-align: center;
   padding: 10px;
   color: #003249;
