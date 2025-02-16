@@ -84,13 +84,19 @@ img {
   text-align: center;
 }
 
-.titres {
-  margin-top: 100px;
-}
-
 .logo {
   width: 70px;
   height: auto;
+}
+
+/**Rytme*/
+main {
+  margin-top: 40px;
+}
+
+.titres {
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 
 /*les composant*/
@@ -168,7 +174,7 @@ img {
   flex-wrap: wrap;
   gap: 5px;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 30px;
   border: 1px solid #003249;
   border-radius: 10px;
   padding: 20px;
@@ -201,7 +207,8 @@ nav a {
 li {
   font-family: "Raleway", serif;
   font-size: 1em;
-  padding: 30px;
+  gap: 30px;
+  padding: 10px;
 }
 
 .navigationPrincipal_recherche-div {
@@ -214,6 +221,8 @@ li {
   gap: 10px;
   color: #003249;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigationPrincipal {
@@ -237,6 +246,11 @@ li {
 
 input {
   border: 1.7px solid black;
+}
+
+input::placeholder {
+  font-size: 18px;
+  text-align: center;
 }
 
 .navigationPrincipal_recherche {
@@ -330,4 +344,9 @@ footer {
 .PieDePage-menu ul {
   list-style-type: none;
   padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #003249;
 }/*# sourceMappingURL=style.css.map */

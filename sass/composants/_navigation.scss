@@ -18,11 +18,14 @@ nav a {
     color: #003249;
 }
 
+
+
 li {
 
     font-family: "Raleway", serif;
     font-size: 1em;
-    padding: 30px;
+    gap: 30px;
+    padding: 10px;
 
 
 }
@@ -39,6 +42,8 @@ li {
     gap: 10px;
     color: #003249;
     gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigationPrincipal {
@@ -65,6 +70,12 @@ li {
 input {
     border: 1.7px solid black;
 
+
+}
+
+input::placeholder {
+    font-size: 18px;
+    text-align: center;
 }
 
 

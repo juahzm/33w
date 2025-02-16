@@ -4,7 +4,7 @@
 
 
 
-        <article class="flex-row titres">
+        <article class="flex-row">
             <div>
                 <h3>NOS OFFRES SPÉCIALES</h3>
                 <ul class="flex-column">
@@ -17,7 +17,7 @@
         </article>
 
 
-        <article class="flex-row titres">
+        <article class="flex-row">
             <div>
                 <h3>CONTACTEZ-NOUS</h3>
                 <ul class="flex-column">
@@ -33,7 +33,7 @@
             <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.png'  ?>" alt="logo">
         </div>
 
-        <article class="flex-row titres">
+        <article class="flex-row">
             <div>
                 <h3>NOS SERVICES</h3>
                 <ul class="flex-column">
@@ -45,7 +45,7 @@
             </div>
         </article>
 
-        <article class="flex-row titres">
+        <article class="flex-row">
             <div>
                 <h3>À PROPOS</h3>
                 <ul class="flex-column">
