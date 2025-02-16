@@ -16,7 +16,6 @@ Text Domain: JHPeriple
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and sharing travel experiences.
 */
-/*les variables*/
 /*les bases*/
 html {
   font-family: "Raleway", serif;
@@ -30,29 +29,29 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1em;
 }
 
 h2 {
   font-family: "Raleway", serif;
-  font-size: 1.5em;
+  font-size: 0.8em;
   color: #003249;
 }
 
 h3 {
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 
 h4 {
-  font-size: 0.6em;
+  font-size: 0.5em;
 }
 
 p {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: 0.5em;
 }
 
 button {
-  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  font-size: 0.6em;
   font-family: "Raleway", serif;
   color: white;
 }
@@ -61,14 +60,21 @@ img {
   max-width: 100%;
 }
 
+.png {
+  width: 5px;
+  height: 5px;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .titres {
@@ -89,7 +95,7 @@ a {
   color: #003249;
 }
 a:hover {
-  color: white;
+  color: lightgray;
 }
 
 /*les composant*/
@@ -123,8 +129,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   height: 100%;
   width: 100%;
@@ -145,7 +150,6 @@ a:hover {
   color: white;
   text-align: center;
   border: 0;
-  width: -moz-fit-content;
   width: fit-content;
   text-decoration: none;
 }
@@ -191,7 +195,7 @@ nav ul {
 
 li {
   font-family: "Raleway", serif;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 30px;
 }
 
@@ -211,33 +215,28 @@ li {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  justify-content: space-between;
+  gap: 15px;
+  justify-content: center;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .navigationPrincipal__conteneurDIV {
   display: flex;
   flex-basis: 7.5ch;
   flex-shrink: 0;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
-.navigationPrincipal__image {
-  display: flex;
-  flex-wrap: wrap;
-  width: 60px;
-  height: -moz-fit-content;
-  height: fit-content;
+.logosvg {
+  width: 100px;
+  height: auto;
 }
 
-.logo {
-  min-width: 30px;
-  min-height: 30px;
+input {
+  border: 1.7px solid black;
 }
 
 .navigationPrincipal_recherche {
@@ -246,7 +245,12 @@ li {
 
 .navigationPrincipal_recherche-input {
   font-family: "Raleway", serif;
-  font-size: 22px;
+  font-size: 10px;
+}
+
+.png {
+  width: 25px;
+  height: 25px;
 }
 
 /*Navigation mobile*/
@@ -261,9 +265,7 @@ li {
   }
   .navigationPrincipal__input.pour-ouvrir-fermer {
     margin-left: auto;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     cursor: pointer;
     pointer-events: all;
     display: block;
@@ -299,7 +301,6 @@ li {
   position: relative;
   top: 80px;
   left: 120px;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid black;
   padding: 10px;
@@ -312,4 +313,19 @@ footer {
   text-align: center;
   padding: 10px;
   color: #003249;
+}
+
+.PieDePage-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 80px;
+  border: solid 2px #003249;
+  background-color: var(--couleurBleuPrussian);
+  padding: 20px;
+}
+
+.PieDePage-menu ul {
+  list-style-type: none;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

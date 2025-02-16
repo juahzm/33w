@@ -1,7 +1,7 @@
 html {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
-    font-style: small;
+    font-style: normal;
     color: #003249;
 }
 
@@ -18,29 +18,29 @@ h1 {
 h2 {
 
     font-family: "Raleway", serif;
-    font-size: 1.7em;
+    font-size: 0.8em;
     color: #003249;
 }
 
 
 h3 {
-    font-size: 1.5em;
+    font-size: 0.7em;
 
 }
 
 h4 {
 
-    font-size: 1.3em;
+    font-size: 0.5em;
 
 
 }
 
 p {
-    font-size: 1em;
+    font-size: 0.5em;
 }
 
 button {
-    font-size: 1em;
+    font-size: 0.6em;
     font-family: "Raleway", serif;
     color: white;
 
@@ -58,11 +58,13 @@ img {
 .flex-column {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .flex-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .titres {
@@ -78,4 +80,14 @@ img {
 
 .titres {
     margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #003249;
+
+    &:hover {
+        color: lightgray;
+    }
+
 }
