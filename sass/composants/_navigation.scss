@@ -20,6 +20,8 @@ nav a {
 
 
 
+
+
 li {
 
     font-family: "Raleway", serif;
@@ -48,6 +50,7 @@ li {
 
 .navigationPrincipal {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 50px;
     gap: 15px;
@@ -92,13 +95,16 @@ input::placeholder {
 }
 
 
-.menu-populaire {
+.menu-populaire .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
+
+    @media (max-width: 840px) {
+        flex-direction: column;
+    }
 }
-
-
 
 
 /*Navigation mobile*/
@@ -111,6 +117,9 @@ input::placeholder {
         inset: 0;
 
     }
+
+
+
 
     .navigationPrincipal__conteneurUL {
         flex-direction: column;

@@ -30,7 +30,7 @@
         </article>
 
         <div class="navigationPrincipal__conteneurDIV">
-            <img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.jpg'  ?>" alt="logo">
+            <a href="index.php"><img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.jpg' ?>" alt="logo"></a>
         </div>
 
         <article class="flex-row">
@@ -59,11 +59,12 @@
 
 
 
-
-
-
-
     </div>
+
+    <div class="flex-column">
+        <?php get_search_form(); ?>
+    </div>
+
     <div>
         <p>Juan Hernandez. Tous droits réservés 2025</p>
     </div>

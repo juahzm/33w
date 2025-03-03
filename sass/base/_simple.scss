@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    font-size: 23px;
+    font-size: 25px;
     color: #003249;
 
 }
@@ -17,7 +17,7 @@ h1 {
 h2 {
 
     font-family: "Raleway", serif;
-    font-size: 21px;
+    font-size: 22px;
     color: #003249;
 }
 
@@ -46,6 +46,7 @@ button {
 
 img {
     max-width: 100%;
+    border-radius: 7px;
 }
 
 .png {
@@ -76,7 +77,6 @@ img {
 }
 
 
-
 .logo {
 
     width: 70px;
@@ -84,10 +84,45 @@ img {
 
 }
 
+.thumbnail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.thumbnail-texte {
+    flex-basis: 1200px;
+}
+
+
+.thumbnail-image {
+    flex-basis: 140px;
+
+
+}
+
+.populaire {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
 /**Rytme*/
 
 main {
     margin-top: 40px;
+}
+
+
+.navigationPrincipal {
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 
@@ -99,4 +134,10 @@ main {
 
 footer {
     margin-top: 200px;
+}
+
+/**Clases de wordpress*/
+
+.wp-block-gallery {
+    margin-bottom: 130px;
 }

@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <main>
-
     <div class="titres">
         <h1>Populaires</h1>
     </div>
@@ -12,9 +11,16 @@
                 <?php if (in_category('galerie')) {
                     the_content();
                 } else { ?>
-                    <article>
-                        <h2><?php the_title(); ?></h2>
-                        <div><?php echo wp_trim_words(get_the_excerpt(), 70, " ... "); ?></div>
+                    <article class="thumbnail">
+                        <div class="thumbnail-image">
+                            <h2><?php the_title(); ?></h2>
+                            <?php if (has_post_thumbnail()) {
+                                the_post_thumbnail('thumbnail');
+                            }
+                            ?>
+
+                        </div>
+                        <div class="thumbnail-texte"><?php echo wp_trim_words(get_the_excerpt(), 70, " ... "); ?></div>
                     </article>
                 <?php } ?>
         <?php endwhile;
