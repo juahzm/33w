@@ -27,13 +27,13 @@ body {
 }
 
 h1 {
-  font-size: 23px;
+  font-size: 25px;
   color: #003249;
 }
 
 h2 {
   font-family: "Raleway", serif;
-  font-size: 21px;
+  font-size: 22px;
   color: #003249;
 }
 
@@ -56,6 +56,7 @@ button {
 
 img {
   max-width: 100%;
+  border-radius: 7px;
 }
 
 .png {
@@ -89,9 +90,36 @@ img {
   height: auto;
 }
 
+.thumbnail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail-texte {
+  flex-basis: 1200px;
+}
+
+.thumbnail-image {
+  flex-basis: 140px;
+}
+
+.populaire {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 /**Rytme*/
 main {
   margin-top: 40px;
+}
+
+.navigationPrincipal {
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 .titres {
@@ -101,6 +129,11 @@ main {
 
 footer {
   margin-top: 200px;
+}
+
+/**Clases de wordpress*/
+.wp-block-gallery {
+  margin-bottom: 130px;
 }
 
 /*les composant*/
@@ -169,6 +202,8 @@ footer {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .Grille .Grille__carte {
   background-color: white;
@@ -231,6 +266,7 @@ li {
 
 .navigationPrincipal {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 15px;
@@ -266,10 +302,16 @@ input::placeholder {
   font-size: 10px;
 }
 
-.menu-populaire {
+.menu-populaire .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 30px;
+}
+@media (max-width: 840px) {
+  .menu-populaire .menu {
+    flex-direction: column;
+  }
 }
 
 /*Navigation mobile*/

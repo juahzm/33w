@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="FR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="sass/style.css"> -->
+    <title>Search</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
 
             <form class="recherche" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
                 <label>
-                    <input class="recherche__input" type="search" placeholder="bio.com" value="<?php echo get_search_query(); ?>" name="s" />
+                    <input class="recherche__input" type="search" placeholder="bioSearch.com" value="<?php echo get_search_query(); ?>" name="s" />
                 </label>
                 <button class="recherche__bouton" type="submit">
                     <span class="recherche__icone">🔍</span>
@@ -60,22 +60,27 @@
 
     </nav>
 
-
-    <header class="TexteSurImage">
-
-        <img class="TexteSurImage__image" src="<?php echo get_template_directory_uri() . '/sass/assets/maldives_main.jpg' ?>" alt="maldives">
+    <main>
 
 
-        <div class="TexteSurImage__texte">
-            <h3>Évasion Horizon</h3>
-            <h4>"Évadez-vous, on s’occupe du reste."</h4>
-            <p>Notre agence vous accompagne dans la création de voyages sur mesure, pour que chaque destination devienne une expérience unique, mémorable et adaptée à vos envies.</p>
-            <button class="TexteSurImage__bouton">
-                <a>S'inscrire</a>
-                </a>
-        </div>
+        <section class="recherche__section">
+            <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
+                    <article>
+                        <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                        <p><?php echo wp_trim_words(get_the_excerpt(), 80); ?></p>
+                        <hr>
+                    </article>
+                <?php endwhile; ?>
+            <?php else : ?>
+                <p>Aucun résultat trouvé.</p>
+            <?php endif; ?>
+        </section>
 
 
+    </main>
 
+    <?php get_footer(); ?>
+</body>
 
-    </header>
+</html>

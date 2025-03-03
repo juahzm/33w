@@ -1,7 +1,8 @@
-# Etape1-2
+
+# TP1 Etape4
+Ajout de la barre de recheche et thumbnails
 ## 33W  - Introduction à un sytéme de gestion de contenu
-## Étudiant: Juan Hernandez
-## GitHub page:  https://juahzm.github.io/
-# Etape-3
-## wordPress site: https://gftnth00.mywhc.ca/33w1
+## étudiant: Juan Hernandez.
+## REproduction d'une maquette pour réaliser la page d'accueil.
+## Lien vers l'hébergeur WHC :  https://gftnth00.mywhc.ca/33w1/
 
