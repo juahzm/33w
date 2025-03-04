@@ -1,5 +1,9 @@
 <footer>
 
+    <div class="flex-column footer_recherche">
+        <?php get_search_form(); ?>
+    </div>
+
     <div class="PieDePage-menu">
 
 
@@ -30,7 +34,11 @@
         </article>
 
         <div class="navigationPrincipal__conteneurDIV">
-            <a href="index.php"><img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.jpg' ?>" alt="logo"></a>
+            <?php
+            if (function_exists('the_custom_logo')) {
+                the_custom_logo();
+            }
+            ?>
         </div>
 
         <article class="flex-row">
@@ -61,8 +69,11 @@
 
     </div>
 
-    <div class="flex-column">
-        <?php get_search_form(); ?>
+
+    <div class="PieDePage-reseaux-sociaux">
+
+        <?php get_template_part("gabarits/icone-sociaux"); ?>
+
     </div>
 
     <div>

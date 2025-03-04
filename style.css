@@ -278,7 +278,6 @@ li {
 
 .navigationPrincipal__conteneurDIV {
   display: flex;
-  flex-basis: 7.5ch;
   flex-shrink: 0;
   height: fit-content;
   width: fit-content;
@@ -394,4 +393,15 @@ footer {
 footer a {
   text-decoration: none;
   color: #003249;
+}
+
+.footer_recherche {
+  margin-bottom: 200px;
+}
+
+.PieDePage-reseaux-sociaux {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
-# TP1 Etape4
-Ajout de la barre de recheche et thumbnails
+# TP2 Etape 1
+Ajoute de la logo et des champs personalisés
 ## 33W  - Introduction à un sytéme de gestion de contenu
 ## étudiant: Juan Hernandez.
 ## REproduction d'une maquette pour réaliser la page d'accueil.
