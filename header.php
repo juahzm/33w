@@ -16,11 +16,15 @@
 
     <nav class="navigationPrincipal">
         <input class="navigationPrincipal__input pour-ouvrir-fermer boutonNavigation" type="checkbox">
-
+        <?php
+        if (function_exists('the_custom_logo')) {
+            the_custom_logo();
+        }
+        ?>
 
 
         <div class="menu-populaire navigationPrincipal__conteneurDIV">
-            <a href="index.php"><img class="logo" src="<?php echo get_template_directory_uri() . '/sass/assets/logotravel.jpg' ?>" alt="logo"></a>
+
 
             <?php wp_nav_menu(
                 array(
