@@ -64,6 +64,7 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .titres {
@@ -97,11 +98,14 @@ img {
 
 .thumbnail-texte {
     flex-basis: 1200px;
+
+
 }
 
 
 .thumbnail-image {
     flex-basis: 140px;
+    padding: 5px;
 
 
 }
@@ -140,4 +144,12 @@ footer {
 
 .wp-block-gallery {
     margin-bottom: 130px;
+}
+
+span a {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+
 }
