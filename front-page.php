@@ -1,31 +1,26 @@
 <?php get_header(); ?>
+
+
 <main>
     <div class="titres">
         <h1>Populaires</h1>
     </div>
 
 
-    <section class="populaire">
+    <section class="populaire flex-row">
 
+        <h3><?php echo single_cat_title(); ?></h3>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <?php if (in_category('galerie')) {
-                    the_content();
-                } else { ?>
-                    <article class="thumbnail">
-                        <div class="thumbnail-image">
-                            <h2><?php the_title(); ?></h2>
-                            <?php if (has_post_thumbnail()) {
-                                the_post_thumbnail('thumbnail');
-                            }
-                            ?>
-
-                        </div>
-                        <div class="thumbnail-texte"><?php echo wp_trim_words(get_the_excerpt(), 70, " ... "); ?></div>
-                    </article>
-                <?php } ?>
+                <?php if (in_category('galerie')) : ?>
+                    <?php the_content(); ?>
+                <?php else : ?>
+                    <!-- Second Section: Carte -->
+                    <div class="carte-div">
+                        <?php get_template_part('gabarits/carte'); ?>
+                    </div>
+                <?php endif; ?>
         <?php endwhile;
         endif; ?>
-
 
     </section>
 

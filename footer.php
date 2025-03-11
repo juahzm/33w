@@ -77,6 +77,13 @@
     </div>
 
     <div>
+
+        <h2><?php bloginfo('name'); ?></h2>
+        <p><?php bloginfo('description'); ?></p>
+        <p><a href="#"><?php bloginfo('admin_email'); ?></a></p>
+    </div>
+
+    <div>
         <p>Juan Hernandez. Tous droits réservés 2025</p>
     </div>
     <?php wp_footer(); ?>
