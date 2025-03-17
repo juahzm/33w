@@ -1,5 +1,58 @@
 <?php
 
+
+function theme_tp_customize_register($wp_customize)
+{
+
+    $wp_customize->add_section('hero_background', array(
+        'title' => __('Hero background', 'theme_tp'),
+        'priority' => 30,
+    ));
+
+
+    $wp_customize->add_setting('hero_background', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
+            'label' => __('Hero background', 'theme_tp'),
+            'section' => 'hero_background',
+        ))
+    );
+
+    $wp_customize->add_setting('hero_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control($wp_customize, 'hero_couleur', array(
+            'label' => __('CouleurDuTexte', 'theme_tp'),
+            'section' => 'hero_background',
+        ))
+    );
+
+    //telephone
+
+
+    $wp_customize->add_setting('hero_telephone', array(
+        'default' => __('514-111-3330', 'theme_tp'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+
+    $wp_customize->add_control('hero_telephone', array(
+        'label' => __('Telephone', 'theme_tp'),
+        'section' => 'hero_background',
+        'type' => 'text',
+    ));
+}
+
+add_action('customize_register', 'theme_tp_customize_register');
+
+//////////////////////////////////////////////////////////////////
+
 function mon_theme_supports()
 {
     // add_theme_support('post-thumbnails');
@@ -12,15 +65,13 @@ function mon_theme_supports()
         'flex-height' => true,
         'flex-width'  => true,
     ));
+
+
     add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
 }
 add_action('after_setup_theme', 'mon_theme_supports');
 
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////////////
 
 function theme_tp_enqueue_styles()
 {

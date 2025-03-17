@@ -30,8 +30,6 @@
                 array(
                     'menu' => 'principal',
                     'container' => 'div',
-                    'container_class' => 'menu-populaire',
-                    'menu_class' => 'menu'
                 )
             );
             ?>
@@ -40,10 +38,10 @@
 
         <div>
             <ul class="navigationPrincipal__conteneurUL">
-                <li><a href="">Séjours</a></li>
-                <li><a href="">Dernière Minute</a></li>
-                <li><a href="">Promo</a></li>
-                <li><a href="">Achetez vos billets</a></li>
+                <li><a href="https://www.lufthansa.com/ca/en/homepage">Séjours</a></li>
+                <li><a href="https://www.expedia.com/">Dernière Minute</a></li>
+                <li><a href="https://www.aircanada.com/home/ca">Promo</a></li>
+                <li><a href="https://www.airtransat.com/">Achetez vos billets</a></li>
 
             </ul>
 

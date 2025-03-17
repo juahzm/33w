@@ -2,8 +2,6 @@ ul {
     display: flex;
     flex-direction: row;
 
-    pointer-events: none;
-
 
 }
 
@@ -99,9 +97,11 @@ input::placeholder {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    text-align: center;
 
     @media (max-width: 840px) {
         flex-direction: column;
+        padding: 0;
     }
 }
 
@@ -122,6 +122,7 @@ input::placeholder {
 
     .navigationPrincipal__conteneurUL {
         flex-direction: column;
+        text-align: center;
 
     }
 
@@ -139,9 +140,15 @@ input::placeholder {
     .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) {
         pointer-events: none;
         background-color: transparent;
+        margin-bottom: 70px;
+
     }
 
     .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) a {
+        opacity: 0;
+    }
+
+    .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) form {
         opacity: 0;
     }
 
@@ -153,18 +160,12 @@ input::placeholder {
 
     .navigationPrincipal__input.pour-ouvrir-fermer:checked:before {
         content: "Fermer ≡";
+
     }
 
 
 
-    .navigationPrincipal_recherche-input {
-        display: none;
-    }
 
-    label,
-    .lupe {
-        display: none;
-    }
 
 
 
