@@ -45,7 +45,7 @@
             <div>
                 <h3>NOS SERVICES</h3>
                 <ul class="flex-column">
-                    <li><a href="">Billets d'avions.</a></li>
+                    <li><a href="https://www.aircanada.com/home/ca/en/aco/flights">Billets d'avions.</a></li>
                     <li><a href="">Location des voitures</a></li>
                     <li><a href="">Reservation des hotels</a></li>
                     <li><a href="">Voyages en groupes</a></li>

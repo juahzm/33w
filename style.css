@@ -100,18 +100,21 @@ img {
   justify-content: center;
 }
 
-.thumbnail-texte {
-  flex-basis: 1200px;
-}
-
 .thumbnail-image {
-  flex-basis: 140px;
+  flex-basis: 240px;
   padding: 5px;
+  text-align: center;
 }
 
 .populaire {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.recherche__section {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
 }
 
 /**Rytme*/
@@ -143,6 +146,10 @@ span a {
   text-decoration: none;
   color: inherit;
   padding: 5px;
+}
+
+form {
+  margin-bottom: 70px;
 }
 
 /*les composant*/
@@ -240,7 +247,6 @@ span a {
 ul {
   display: flex;
   flex-direction: row;
-  pointer-events: none;
 }
 
 nav ul {
@@ -315,10 +321,12 @@ input::placeholder {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
+  text-align: center;
 }
 @media (max-width: 840px) {
   .menu-populaire .menu {
     flex-direction: column;
+    padding: 0;
   }
 }
 
@@ -331,6 +339,7 @@ input::placeholder {
   }
   .navigationPrincipal__conteneurUL {
     flex-direction: column;
+    text-align: center;
   }
   .navigationPrincipal__input.pour-ouvrir-fermer {
     margin-left: auto;
@@ -342,8 +351,12 @@ input::placeholder {
   .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) {
     pointer-events: none;
     background-color: transparent;
+    margin-bottom: 70px;
   }
   .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) a {
+    opacity: 0;
+  }
+  .navigationPrincipal:has(input.pour-ouvrir-fermer:not(:checked)) form {
     opacity: 0;
   }
   .navigationPrincipal__input.pour-ouvrir-fermer:before {
@@ -353,13 +366,6 @@ input::placeholder {
   }
   .navigationPrincipal__input.pour-ouvrir-fermer:checked:before {
     content: "Fermer ≡";
-  }
-  .navigationPrincipal_recherche-input {
-    display: none;
-  }
-  label,
-  .lupe {
-    display: none;
   }
 }
 @media (min-width: 840px) {
@@ -405,7 +411,7 @@ footer a {
 }
 
 .footer_recherche {
-  margin-bottom: 200px;
+  margin-bottom: 40px;
 }
 
 .PieDePage-reseaux-sociaux {
