@@ -67,6 +67,12 @@ img {
     justify-content: center;
 }
 
+
+.flex-block {
+    display: block;
+    align-self: center;
+}
+
 .titres {
     display: flex;
     flex-direction: row;
