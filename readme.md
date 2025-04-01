@@ -1,7 +1,5 @@
-
-# TP2 Etape 2
+Adition de REST API
+# TP2 Etape 2 tp2-etape3
 ## 33W  - Introduction à un sytéme de gestion de contenu
-Ajoute du customizer sur la navigation et la section hero
 ## étudiant: Juan Hernandez.
-## Reproduction d'une maquette pour réaliser la page d'accueil.
-## Lien vers l'hébergeur WHC :  https://gftnth00.mywhc.ca/33w1/
+## Lien vers l'hébergeur WHC : https://gftnth00.mywhc.ca/33w11/

@@ -1,5 +1,7 @@
 <?php
 
+$functions_dir = get_template_directory() . '/functions/';
+include_once $functions_dir . "generateur.php";
 
 function theme_tp_customize_register($wp_customize)
 {
@@ -81,6 +83,14 @@ function theme_tp_enqueue_styles()
         get_template_directory_uri() . '/style.css',
         array(),
         filemtime(get_template_directory() . '/style.css')
+    );
+
+    wp_enqueue_script(
+        'destination_restapi',
+        get_template_directory_uri() . '/js/destination.js',
+        array(),
+        filemtime(get_template_directory() . '/js/destination.js'),
+        true
     );
 }
 add_action('wp_enqueue_scripts', 'theme_tp_enqueue_styles');

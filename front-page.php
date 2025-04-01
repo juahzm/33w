@@ -36,6 +36,21 @@
         <?php get_template_part('gabarits/grille_destinations'); ?>
     </div>
 
+    </section>
+    <section class="destination">
+        <div class="conteneur__api">
+            <div class="flex-block TexteSurImage__bouton">
+                <?php categories_liste("destination"); ?>
+            </div>
+
+            <div class="destination__container destination__list">
+
+            </div>
+        </div>
+    </section>
+
+
+
 
 
 </main>
