@@ -1,137 +1,27 @@
-<section class="Grille">
+<?php if (have_posts()): ?>
+    <?php while (have_posts()): the_post(); ?>
+        <?php if (has_term('plusvendu', 'category')): ?>
+            <article class="carte-container2 ">
+                <div class="thumbnail-image">
+                    <h2><?php the_title(); ?></h2>
 
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>Tokyo</h2>
-        </div>
+                    <?php if (has_post_thumbnail()) {
+                        the_post_thumbnail('medium');
+                    } ?>
+                </div>
 
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/japan2.jpg' ?>" alt="tokio2">
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
 
-    </article>
+                <div>
+                    <form method="get" action="<?php echo esc_url(home_url('/404')); ?>">
+                        <!-- Hidden input field to pass the trimmed excerpt value -->
+                        <input type="hidden" name="excerpt_value" value="<?php echo esc_attr(get_the_content()); ?>" />
 
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>Patagonia</h2>
-        </div>
-
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/argentinapa.jpeg' ?>" alt="argentinapa">
-
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
-
-    </article>
-
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>Canyon du Colorado</h2>
-        </div>
-
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/canyon.jpeg' ?>" alt="canyon">
-
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
-
-    </article>
-
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>La thailande</h2>
-        </div>
-
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/tailandia.jpeg' ?>" alt="tailandia">
-
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
-
-    </article>
-
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>Machu Pichu</h2>
-        </div>
-
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/peru.jpeg' ?>" alt="peru">
-
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
-
-    </article>
-
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>L'égypte</h2>
-        </div>
-
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/egypt.jpeg' ?>" alt="egypt">
-
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
-
-    </article>
-
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>L'Australie</h2>
-        </div>
-
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/sydney.jpeg' ?>" alt="sydney">
-
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
-
-    </article>
-
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>Paris</h2>
-        </div>
-
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/paris.jpeg' ?>" alt="paris">
-
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
-
-    </article>
-
-    <article class="Grille__carte">
-        <div class="Grille__carte-titre">
-            <h2>Bogota</h2>
-        </div>
-
-        <picture>
-            <img class="Grille__carte-image" src="<?php echo get_template_directory_uri() . '/sass/assets/bogota.jpeg' ?>" alt="bogota">
-
-        </picture>
-        <button class="TexteSurImage__bouton">
-            <a>Plus d'info</a>
-        </button>
-
-    </article>
-
-</section>
+                        <button type="submit" class="TexteSurImage__bouton">Plus d'info</button>
+                    </form>
+                </div>
+            </article>
+        <?php endif; ?>
+    <?php endwhile; ?>
+<?php else: ?>
+    <p>No posts found.</p>
+<?php endif; ?>
