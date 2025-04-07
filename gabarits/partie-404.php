@@ -1,6 +1,3 @@
-<?php get_header(); ?>
-
-<?php wp_head(); ?>
 <?php
 $error_background = get_theme_mod('section_404_background', 'Default Title');
 ?>
