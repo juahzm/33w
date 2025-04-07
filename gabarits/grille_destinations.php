@@ -12,7 +12,7 @@
 
 
                 <div>
-                    <form method="get" action="<?php echo esc_url(home_url('/404')); ?>">
+                    <form method="get" action="<?php echo esc_url(home_url('/333')); ?>">
                         <!-- Hidden input field to pass the trimmed excerpt value -->
                         <input type="hidden" name="excerpt_value" value="<?php echo esc_attr(get_the_content()); ?>" />
 

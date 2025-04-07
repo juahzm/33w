@@ -1,0 +1,101 @@
+.TexteSurImage {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vmin;
+  overflow: hidden;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.TexteSurImage:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.TexteSurImage__image {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.TexteSurImage__texte {
+  flex-basis: 30ch;
+  color: white;
+  font-size: 42px;
+  text-align: center;
+}
+
+.TexteSurImage__bouton {
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: white;
+  color: #007ea7;
+  text-align: center;
+  border: 1px solid #007ea7;
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+}
+
+.TexteSurImage__bouton:hover {
+  background-color: gray;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav2 ul {
+  list-style-type: none;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: center;
+}
+.nav2 * > li {
+  border: solid;
+  background-color: yellow;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Raleway", serif;
+  font-size: 1em;
+}
+
+.nav2 a {
+  text-decoration: none;
+  color: #003249;
+  font-size: 20px;
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+@media (max-width: 840px) {
+  > img {
+    height: 100vh;
+  }
+}/*# sourceMappingURL=erreur-404.css.map */

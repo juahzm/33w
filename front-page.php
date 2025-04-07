@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
+<div class="">
+    <?php get_template_part('gabarits/hero'); ?>
+</div>
+
 
 <main>
 
