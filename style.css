@@ -568,11 +568,6 @@ footer a {
   color: white;
 }
 
-.nav2 {
-  display: flex;
-  justify-content: center;
-}
-
 ul {
   display: flex;
   flex-direction: row;
@@ -583,21 +578,24 @@ ul {
   list-style-type: none;
 }
 
-.nav2 li {
+.nav2 {
+  display: flex;
+  justify-content: center;
+}
+.nav2 * > li {
   border: solid;
+  background-color: yellow;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Raleway", serif;
+  font-size: 1em;
 }
 
 .nav2 a {
   text-decoration: none;
   color: #003249;
   font-size: 20px;
-}
-
-li {
-  font-family: "Raleway", serif;
-  font-size: 1em;
-  gap: 30px;
-  padding: 10px;
 }
 
 .h1 {

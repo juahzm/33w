@@ -61,10 +61,7 @@
     color: white;
 }
 
-.nav2 {
-    display: flex;
-    justify-content: center;
-}
+
 
 
 
@@ -82,9 +79,24 @@ ul {
 
 }
 
-.nav2 li {
-    border: solid;
+.nav2 {
+    display: flex;
+    justify-content: center;
+
+
+    *>li {
+        border: solid;
+        background-color: yellow;
+        margin: 0;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: "Raleway", serif;
+        font-size: 1em;
+    }
+
+
 }
+
 
 
 .nav2 a {
@@ -96,16 +108,15 @@ ul {
 }
 
 
+// li {
 
-li {
-
-    font-family: "Raleway", serif;
-    font-size: 1em;
-    gap: 30px;
-    padding: 10px;
+//     font-family: "Raleway", serif;
+//     font-size: 1em;
+//     gap: 30px;
+//     padding: 10px;
 
 
-}
+// }
 
 .h1 {
 

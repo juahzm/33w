@@ -13,6 +13,18 @@ $error_background = get_theme_mod('section_404_background', 'Default Title');
     }
 </style>
 
+<style>
+    .background_bouton_menu {
+        background-color: <?php echo get_theme_mod('background_bouton_menu', '#000000'); ?>;
+    }
+</style>
+
+
+<style>
+    .retour_background_bouton {
+        background-color: <?php echo get_theme_mod('retour_background_bouton', '#000000'); ?>;
+    }
+</style>
 
 
 
@@ -28,7 +40,7 @@ $error_background = get_theme_mod('section_404_background', 'Default Title');
 
         <!-- <p class="hero__telephone">Téléphone: <?php echo $hero_telephone; ?></p> -->
         <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
-            <button class="TexteSurImage__bouton">
+            <button class="TexteSurImage__bouton retour_background_bouton">
                 <a href="<?php echo esc_url(home_url('/')); ?>">'Retour à l'accueil</a>
             </button>
         </form>
@@ -41,6 +53,7 @@ $error_background = get_theme_mod('section_404_background', 'Default Title');
                 array(
                     'menu' => 'examen1',
                     'container' => 'nav2',
+                    'container_class' => 'background_bouton_menu'
 
                 )
             );

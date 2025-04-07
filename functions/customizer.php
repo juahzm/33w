@@ -54,10 +54,31 @@ function theme_tp_customize_register($wp_customize)
 
 
 
+    $wp_customize->add_setting('background_bouton_menu', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control($wp_customize, 'background_bouton_menu', array(
+            'label' => __('backgroundBoutonMenu', 'theme_tp'),
+            'section' => 'section_404_background',
+        ))
+    );
+
+    $wp_customize->add_setting('retour_background_bouton', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
 
 
 
-
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control($wp_customize, 'retour_background_bouton', array(
+            'label' => __('RetourBackgroundBouton', 'theme_tp'),
+            'section' => 'section_404_background',
+        ))
+    );
 
 
 
