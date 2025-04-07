@@ -63,6 +63,7 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .nav2 ul {

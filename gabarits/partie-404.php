@@ -1,3 +1,6 @@
+<?php get_header(); ?>
+
+<?php wp_head(); ?>
 <?php
 $error_background = get_theme_mod('section_404_background', 'Default Title');
 ?>
@@ -46,20 +49,19 @@ $error_background = get_theme_mod('section_404_background', 'Default Title');
         </form>
 
 
-        <div class="nav2">
-
+        <section class="nav2">
 
             <?php wp_nav_menu(
                 array(
                     'menu' => 'examen1',
-                    'container' => 'nav2',
-                    'container_class' => 'background_bouton_menu'
+                    'container' => 'section',
+                    'container_class' => 'nav2'
 
                 )
             );
             ?>
 
-        </div>
+        </section>
 
 
         <form class="recherche" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
