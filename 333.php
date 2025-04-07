@@ -64,12 +64,19 @@
 
     <main>
 
+        <div class="content_carte_travel">
 
-        <div class="">
-
-            <?php get_template_part("gabarits/partie-404"); ?>
+            <?php
+            if (isset($_GET['excerpt_value'])) {
+                echo '...' . esc_html($_GET['excerpt_value']);
+            }
+            ?>
 
         </div>
+
+
+
+
     </main>
 
 
